@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -18,26 +18,71 @@ a {
     text-decoration: none;
 }
 
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .row {
     margin: 0 auto;
-    max-width: 1140px;
+    max-width: 1170px;
 }
 
 header {
-    height: 700px;
-    height: 100vh;
+    min-height: 700px;
     color: #fff;
-    background: url(../img/hero-bg.png);
-    background-position: center;
+    background-image: url(../img/hero-bg.png);
+    background-position: top;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
     position: absolute;
-    width: 1140px;
-    top: 50%;
+    width: 1170px;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, 0)
+}
+
+.logo {
+    float: left;
+    width: 70px;
+    margin: 30px 0 136px;
+}
+
+.main-menu {
+    float: left;
+    margin-top: 26px;
+    margin-left: 370px;
+    list-style-type: none;
+}
+
+.main-menu > li {
+    margin-right: 30px;
+    float: left;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu > li > a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.main-menu > li > a .fab {
+    font-size: 20px;
+}
+
+.main-menu > li > a:hover,
+.main-menu > li > a:active {
+    color: #ea2845;
 }
 
 .hero-text-box h1 {
@@ -52,13 +97,13 @@ header {
     font-size: 18px;
     font-weight: 500;
     line-height: 170%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
-.hero-text-box a {
+.hero-text-box .btn {
     display: inline-block;
     text-align: center;
-    padding: 18px;
+    padding: 15px 18px;
     color: #fff;
     font-weight: 500;
     font-size: 16px;
@@ -68,18 +113,18 @@ header {
     transition: color 0.2s, border 0.2s, background-color 0.2s;
 }
 
-.hero-text-box a:hover {
+.hero-text-box .btn:hover {
     color: #ea2845;
     border: 2px solid #ea2845;
 }
 
-.hero-text-box a.primary {
+.hero-text-box .btn-primary {
     margin-right: 16px;
     background-color: #ea2845;
     border: 2px solid #ea2845;
 }
 
-.hero-text-box a.primary:hover {
+.hero-text-box .btn-primary:hover {
     color: #fff;
     background: none;
 }
