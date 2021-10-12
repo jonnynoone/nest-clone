@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background: url(../img/hero-bg.png);
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.hero-text-box h1 {
+    padding: 10px 0;
+    font-size: 55px;
+}
+
+.hero-text-box p {
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 40px;
+}
+
+.hero-text-box a {
+    display: inline-block;
+    text-align: center;
+    padding: 18px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    min-width: 230px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    transition: color 0.2s, border 0.2s, background-color 0.2s;
+}
+
+.hero-text-box a:hover {
+    color: #ea2845;
+    border: 2px solid #ea2845;
+}
+
+.hero-text-box a.primary {
+    margin-right: 16px;
+    background-color: #ea2845;
+    border: 2px solid #ea2845;
+}
+
+.hero-text-box a.primary:hover {
+    color: #fff;
+    background: none;
+}
