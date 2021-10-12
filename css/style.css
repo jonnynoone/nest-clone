@@ -128,3 +128,37 @@ header {
     color: #fff;
     background: none;
 }
+
+.features-section > .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+    padding: 80px 46px;
+    margin-bottom: 20px;
+}
+
+.feature-image {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.feature > h3 {
+    color: #ea2845;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.feature > p {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 300px;
+    line-height: 180%;
+    text-align: center;
+}
