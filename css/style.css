@@ -228,3 +228,38 @@ header {
 .info-section .box-right .btn {
     margin-top: 40px;
 }
+
+/* -------------------------------------- */
+/* CONFERENCES */
+/* -------------------------------------- */
+.conferences-section {
+    color: #fff;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+.conferences-section > .row {
+    padding: 100px 0;
+}
+
+.conferences-section h2 {
+    font-size: 180%;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.conferences-section p {
+    font-size: 80%;
+    font-weight: 500;
+    line-height: 180%;
+}
+
+.conferences-section a {
+    color: #ed1543;
+    font-weight: 500;
+}
+
+.conferences-section .yt-video {
+    border: none;
+    margin-top: 100px;
+}
