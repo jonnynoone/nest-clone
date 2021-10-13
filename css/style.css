@@ -230,6 +230,43 @@ header {
 }
 
 /* -------------------------------------- */
+/* PREVIEW */
+/* -------------------------------------- */
+.preview-section {
+    color: #fff;
+    text-align: center;
+    background-color: #111;
+}
+
+.preview-section > .row {
+    padding: 100px 0;
+}
+
+.preview-section h2 {
+    font-size: 180%;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.preview-section p {
+    max-width: 600px;
+    font-size: 80%;
+    font-weight: 500;
+    line-height: 180%;
+    margin: 0 auto;
+}
+
+.preview-section a {
+    color: #ed1543;
+    font-weight: 500;
+}
+
+.preview-section .code-sandbox {
+    border: none;
+    margin-top: 100px;
+}
+
+/* -------------------------------------- */
 /* CONFERENCES */
 /* -------------------------------------- */
 .conferences-section {
@@ -249,9 +286,11 @@ header {
 }
 
 .conferences-section p {
+    max-width: 700px;
     font-size: 80%;
     font-weight: 500;
     line-height: 180%;
+    margin: 0 auto;
 }
 
 .conferences-section a {
