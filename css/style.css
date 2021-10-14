@@ -415,3 +415,96 @@ header {
     background-color: #000;
     border: 2px solid #000;
 }
+
+/* -------------------------------------- */
+/* NEWSLETTER */
+/* -------------------------------------- */
+.newsletter-section {
+    overflow: hidden;
+    background-color: #e8e8e8;
+    padding: 45px 0 43px;
+    position: relative;
+}
+
+.newsletter-section .envelope-bg {
+    width: 180px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(-30deg);
+
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 60px;
+    
+    z-index: 0;
+}
+
+.newsletter-section .envelope-bg svg {
+    width: 180px;
+    color: #dedede;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.newsletter-section .text-content {
+    float: left;
+    font-size: 70%;
+    color: #7b7b7b;
+    max-width: 670px;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-section .text-content h3 {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;;
+}
+
+.newsletter-section .text-content p {
+    font-weight: 500;
+}
+
+.newsletter-section .newsletter-form {
+    float: right;
+}
+
+.newsletter-section form {
+    float: right;
+}
+
+.newsletter-section form > input[type=email] {
+    color: #666;
+    padding: 10px 20px;
+    background-color: #fdfdfd;
+    font-size: 13px;
+    border: 0;
+    height: 40px;
+    vertical-align: middle;
+    width: 340px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    box-shadow: -1px 1px 3px #ccc;
+}
+
+.newsletter-section form > input[type=email]:active,
+.newsletter-section form > input[type=email]:focus {
+    outline: none;
+}
+
+.newsletter-section form > button {
+    color: #fff;
+    padding: 12px 18px;
+    background-color: #ed1543;
+    font-size: 13px;
+    border: none;
+    vertical-align: middle;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-left: -10px;
+    transition: background-color 0.2s;
+}
+
+.newsletter-section form > button:hover {
+    background-color: #000;
+}
