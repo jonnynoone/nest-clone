@@ -347,3 +347,71 @@ header {
     border: none;
     margin-top: 100px;
 }
+
+/* -------------------------------------- */
+/* SPONSORS */
+/* -------------------------------------- */
+.sponsors-section {
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+.sponsors-section > .row {
+    padding: 100px 0;
+}
+
+.sponsors-section h2 {
+    color: #ed1543;
+    font-size: 180%;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.sponsors-section p {
+    max-width: 700px;
+    font-size: 80%;
+    font-weight: 500;
+    line-height: 180%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.box-sponsors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+}
+
+.box-sponsors h5 {
+    grid-column: 1/5;
+    font-size: 17px;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.sponsor {
+    vertical-align: middle;
+}
+
+.sponsor img {
+    max-width: 240px;
+    opacity: 0.6;
+    vertical-align: middle;
+    filter: grayscale(1);
+}
+
+.sponsor img:hover {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.sponsors-section .btn {
+    margin-top: 70px;
+}
+
+.sponsors-section > .row > .btn:hover {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+}
