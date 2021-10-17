@@ -15,6 +15,7 @@ html {
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 a {
@@ -23,7 +24,7 @@ a {
 
 h2 {
     font-size: 160%;
-    line-height: 45px;
+    line-height: 142%;
 }
 
 /* -------------------------------------- */
@@ -40,9 +41,14 @@ h2 {
     max-width: 1170px;
 }
 
+.row-padding {
+    padding: 100px 30px;
+}
+
 .box-right {
     width: 60%;
     float: right;
+    padding: 90px 0 100px;
 }
 
 /* ----- BUTTONS ----- */
@@ -146,19 +152,22 @@ header {
     width: 1170px;
     top: 0;
     left: 50%;
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
+    padding-bottom: 200px;
 }
 
 .logo {
     float: left;
-    width: 70px;
     margin: 30px 0 136px;
 }
 
+.logo > img {
+    width: 70px;
+}
+
 .main-menu {
-    float: left;
+    float: right;
     margin-top: 26px;
-    margin-left: 370px;
     list-style-type: none;
 }
 
@@ -170,16 +179,20 @@ header {
     align-items: center;
 }
 
+.main-menu > li:last-child {
+    margin-right: 0;
+}
+
 .main-menu > li > a {
     color: #fff;
-    font-size: 16px;
+    font-size: 80%;
     font-weight: 700;
     text-transform: uppercase;
     transition: color 0.2s;
 }
 
 .main-menu > li > a .fab {
-    font-size: 20px;
+    font-size: 130%;
 }
 
 .main-menu > li > a:hover,
@@ -198,20 +211,30 @@ header {
     max-width: 600px;
     font-size: 18px;
     font-weight: 500;
-    line-height: 170%;
+    line-height: 180%;
     margin-bottom: 60px;
+}
+
+.buttons-wrapper i.fab {
+    font-size: 110%;
+    margin-right: 12px;
 }
 
 /* -------------------------------------- */
 /* FEATURES */
 /* -------------------------------------- */
+.features-section {
+    padding: 110px 0 80px;
+    background-color: rgb(243, 243, 243);
+}
+
 .features-section > .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .feature {
-    padding: 80px 46px;
+    padding: 0 46px;
     margin-bottom: 20px;
 }
 
@@ -232,6 +255,7 @@ header {
 }
 
 .feature > p {
+    margin: 0 auto;
     font-size: 16px;
     font-weight: 500;
     max-width: 300px;
@@ -249,10 +273,6 @@ header {
     background-color: #ed1543;
 }
 
-.info-section .box-right {
-    padding: 90px 0 100px;
-}
-
 .info-section h2,
 .info-section p {
     color: #fff;
@@ -261,8 +281,9 @@ header {
 .info-section p {
     font-size: 87.5%;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 182%;
     margin-top: 30px;
+    max-width: 660px;
 }
 
 .info-section .box-right .btn {
@@ -276,10 +297,6 @@ header {
     color: #fff;
     text-align: center;
     background-color: #111;
-}
-
-.preview-section > .row {
-    padding: 100px 0;
 }
 
 .preview-section h2 {
@@ -303,7 +320,7 @@ header {
 
 .preview-section .code-sandbox {
     border: none;
-    margin-top: 100px;
+    margin-top: 80px;
     width: 100%;
     height: 500px;
     border: 0;
@@ -318,10 +335,6 @@ header {
     color: #fff;
     text-align: center;
     background-color: #0a0a0a;
-}
-
-.conferences-section > .row {
-    padding: 100px 0;
 }
 
 .conferences-section h2 {
@@ -343,9 +356,20 @@ header {
     font-weight: 500;
 }
 
-.conferences-section .yt-video {
-    border: none;
-    margin-top: 100px;
+.video-wrapper {
+    margin-top: 80px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 /* -------------------------------------- */
@@ -354,10 +378,6 @@ header {
 .sponsors-section {
     text-align: center;
     background-color: #fdfdfd;
-}
-
-.sponsors-section > .row {
-    padding: 100px 0;
 }
 
 .sponsors-section h2 {
@@ -379,6 +399,7 @@ header {
 .box-sponsors {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
     margin-top: 60px;
 }
 
@@ -426,6 +447,10 @@ header {
     position: relative;
 }
 
+.newsletter-section > .row {
+    padding: 0 30px;
+}
+
 .newsletter-section .envelope-bg {
     width: 180px;
     display: inline-block;
@@ -439,9 +464,8 @@ header {
     z-index: 0;
 }
 
-.newsletter-section .envelope-bg svg {
+.newsletter-section .envelope-bg img {
     width: 180px;
-    color: #dedede;
     display: inline-block;
     vertical-align: middle;
 }
@@ -467,6 +491,8 @@ header {
 
 .newsletter-section .newsletter-form {
     float: right;
+    position: relative;
+    z-index: 1;
 }
 
 .newsletter-section form {
@@ -485,6 +511,7 @@ header {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     box-shadow: -1px 1px 3px #ccc;
+    margin-top: 4px;
 }
 
 .newsletter-section form > input[type=email]:active,
@@ -503,6 +530,8 @@ header {
     border-bottom-right-radius: 3px;
     margin-left: -10px;
     transition: background-color 0.2s;
+    margin-top: 4px;
+    box-shadow: 1px 1px 3px #ccc;
 }
 
 .newsletter-section form > button:hover {

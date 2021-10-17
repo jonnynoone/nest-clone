@@ -11,6 +11,7 @@
 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
 
     <title>Nest Clone</title>
 </head>
@@ -21,10 +22,10 @@
             <a href="#"><img class="logo" src="img/logo.svg" alt="Logo"></a>
     
             <ul class="main-menu group">
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Enterprise</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Support Us</a></li>
+                <li class="link_documentation"><a href="#">Documentation</a></li>
+                <li class="link_enterprise"><a href="#">Enterprise</a></li>
+                <li class="link_courses"><a href="#">Courses</a></li>
+                <li class="link_support-us"><a href="#">Support Us</a></li>
                 <li class="social-icon"><a href="#"><i class="fab fa-github"></i></a></li>
                 <li class="social-icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li class="social-icon"><a href="#"><i class="fab fa-linkedin"></i></a></li>
@@ -33,27 +34,31 @@
     </div>
 
     <header>
-        <div class="hero-text-box">
-
-            <nav class="group">
-                <a href="#"><img class="logo" src="img/logo.svg" alt="Logo"></a>
+        <div class="row">
+            <div class="hero-text-box">
     
-                <ul class="main-menu group">
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Enterprise</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Support Us</a></li>
-                    <li><a href="#"><i class="fab fa-github"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </nav>
-
-            <h1>Hello, nest!</h1>
-            <p>A progressive Node.js framework for building efficient, reliable and scalable server-side applications.</p>
-
-            <a class="btn btn-primary" href="#">Documentation</a>
-            <a class="btn" href="#">Source Code</a>
+                <nav class="group">
+                    <a class="logo" href="#"><img src="img/logo.svg" alt="Logo"></a>
+        
+                    <ul class="main-menu group">
+                        <li class="link_documentation"><a href="#">Documentation</a></li>
+                        <li class="link_enterprise"><a href="#">Enterprise</a></li>
+                        <li class="link_courses"><a href="#">Courses</a></li>
+                        <li class="link_support-us"><a href="#">Support Us</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </nav>
+    
+                <h1>Hello, nest!</h1>
+                <p>A progressive Node.js framework for building efficient, reliable and scalable server-side applications.</p>
+                
+                <div class="buttons-wrapper">
+                    <a class="btn btn-primary" href="#">Documentation</a>
+                    <a class="btn" href="#"><i class="fab fa-github"></i>Source Code</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -102,31 +107,33 @@
     </section>
 
     <section class="preview-section">
-        <div class="row">
+        <div class="row row-padding">
             <h2>Live Preview</h2>
             <p>
                 See how your application may potentially look like without leaving
                 your personal browser.
             </p>
-
+            
             <iframe class="code-sandbox" src="https://codesandbox.io/embed/jjo90y00xw?hidenavigation=1&amp;autoresize=1&amp;fontsize=14&amp;module=%2Fsrc%2Fapp.controller.ts"></iframe>
         </div>
     </section>
 
     <section class="conferences-section">
-        <div class="row">
+        <div class="row row-padding">
             <h2>Conferences</h2>
             <p>
                 Building a platform: Nest from the ground up <a href="#">Kamil Mysliwiec</a><br>
                 <a href="#">JSPoland</a> Warsaw 2018
             </p>
 
-            <iframe class="yt-video" width="1140" height="640" src="https://www.youtube.com/embed/f0qzBkAQ3mk"></iframe>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/f0qzBkAQ3mk"></iframe>
+            </div>
         </div>
     </section>
 
     <section class="sponsors-section">
-        <div class="row">
+        <div class="row row-padding">
             <h2>Support Us</h2>
             <p>
                 Nest is an MIT-licensed open-source project. Hence, it grows thanks to the sponsors and support by the amazing backers. Please, consider supporting us!
@@ -135,17 +142,17 @@
             <div class="box-sponsors">
                 <h5>Principal Sponsors</h5>
                 <a href="#" class="sponsor"><img src="img/sponsors/1.png" alt="Sponsor 1"></a>
-                <a href="#" class="sponsor"><img src="img/sponsors/4.png" alt="Sponsor 2"></a>
-                <a href="#" class="sponsor"><img src="img/sponsors/9.svg" alt="Sponsor 7"></a>
-                <a href="#" class="sponsor"><img src="img/sponsors/5.png" alt="Sponsor 8"></a>
+                <a href="#" class="sponsor"><img src="img/sponsors/2.png" alt="Sponsor 2"></a>
+                <a href="#" class="sponsor"><img src="img/sponsors/3.svg" alt="Sponsor 3"></a>
+                <a href="#" class="sponsor"><img src="img/sponsors/4.png" alt="Sponsor 4"></a>
             </div>
 
             <div class="box-sponsors">
                 <h5>Gold Sponsors</h5>
-                <a href="#" class="sponsor"><img src="img/sponsors/3.png" alt="Sponsor 3"></a>
-                <a href="#" class="sponsor"><img src="img/sponsors/7.png" alt="Sponsor 4"></a>
-                <a href="#" class="sponsor"><img src="img/sponsors/9.jpg" alt="Sponsor 5"></a>
+                <a href="#" class="sponsor"><img src="img/sponsors/5.png" alt="Sponsor 5"></a>
                 <a href="#" class="sponsor"><img src="img/sponsors/6.png" alt="Sponsor 6"></a>
+                <a href="#" class="sponsor"><img src="img/sponsors/7.jpg" alt="Sponsor 7"></a>
+                <a href="#" class="sponsor"><img src="img/sponsors/8.png" alt="Sponsor 8"></a>
             </div>
             
             <a class="btn btn-primary" href="#">Become a sponsor</a>
@@ -153,9 +160,9 @@
     </section>
 
     <section class="newsletter-section">
-        <div class="row group">
+        <div class="row row-padding group">
             <div class="envelope-bg">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>
+                <img src="img/envelope.svg" alt="Envelope">
             </div>
 
             <div class="text-content">
